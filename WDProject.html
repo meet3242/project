@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Punjab College Of Technical Education</title>
+	<style>
+		body {
+			background-image: url("build1.jpg");
+			background-repeat: no-repeat;
+			background-size: cover;
+		}
+		    header {
+		    	background-color: ghostwhite;
+      background-blend-mode: screen;
+      text-align: center;
+    }
+		
+		#logo {
+			float: left;
+			display: block;
+			margin: 0 auto;
+			max-width: 100%;
+			height: auto;
+		}
+		
+		#jump-buttons {
+			text-align: center;
+			margin-top: 50px;
+		}
+		
+		#jump-buttons button {
+			background-color: #4CAF50;
+			color: white;
+			padding: 10px 20px;
+			border: none;
+			border-radius: 5px;
+			margin-right: 10px;
+			cursor: pointer;
+		}
+		
+		#jump-buttons button:hover {
+			background-color: grey;
+		}
+		
+		.section {
+			padding: 50px;
+			text-align: center;
+		}
+		
+		.section h2 {
+			background-color: ghostwhite;
+			margin-top: 0;
+		}
+	</style>
+</head>
+<body>
+	<header>
+		<img id="logo" src="pcte.png" alt="College Logo">
+		<h1>Welcome to Punjab College of Technical Education</h1>
+	</header>
+	
+	<nav id="jump-buttons">
+		<button onclick="location.href='#about'">About</button>
+		<button onclick="location.href='#programs'">Attendance</button>
+		<button onclick="location.href='#contact'">Time Management</button>
+	</nav>
+	
+	<section id="about" class="section">
+		<h2>Nurturing Students Into Leaders Since 1999</h2>
+		<p>Located in the welcoming state of Punjab in India, the PCTE Group of Institutes is a premier educational institution that focuses on developing the practical as well as theoretical skills of its students. The college offers various courses in different backgrounds like Engineering, Information
+Technology,  Pharmacy, Journalism, Biotechnology, Medical Lab Technology, management, hospitality, fashion designing, commerce, etc. Students from across the globe have witnessed the serenity and exposure that the college has to offer and have had made some life long memories being here. PCTE is affiliated with IK Gujral Punjab Technical University and is well known for its cultural events and programmes like Koshish, Ehsaas, Turf, and many more co-curricular activities that are held almost every month. Established in 1999, PCTE is ranked as the best B School in North India today, all thanks to its skilled staff, state-of-the-art infrastructure, exciting competitions, events, and various entrepreneurial opportunities that are given to the students.</p>
+	</section>
+	
+	<section id="programs" class="section">
+		<script>
+
+     function showCountdownalert() 
+     {
+     alert("Time's Up! You are Late!");
+     }
+     function startCountdown() 
+     {
+     const countdowntime = 20;
+     
+    setTimeout(showCountdownAlert, countdownTime * 1000);
+     }
+     function validate()
+                      {
+                     let name = document.forms["login"]["fname"].value;
+                     let pass = document.forms["login"]["pwd"].value;
+                     let now = new Date();
+                     alert( now );
+                    
+                   if(name=="")
+                      {
+                       alert("please enter name");
+                       document.getElementById("txt").style.borderColor="red";
+                      }
+                      if(pass=="")
+                      {
+                       alert("please enter Password");
+                       document.getElementById("text").style.borderColor="red";
+                      }
+
+                 }
+     </script>
+		<h2>Check Your Attendance</h2>
+		<form onsubmit="showCountdownalert()" onsubmit="return validate()" 0 method="get" action="proj.html" name="login">
+         <table align="center" border="5px grid">
+             <tr>
+                <td>Username:</td>
+                <td><input type="text" pattern="[A-Za-z0-9]+" name="fname" id="txt" required></td>
+             </tr>
+             <tr>
+               <td>Password:</td>
+               <td><input type="Password" pattern="[a-z0-9]+" name="pwd" id="text" required></td>
+             </tr>
+                          <tr>
+               <td colspan="4"><input type="submit" value="Done"></td>
+               <td colspan="4"><input type="reset" value="Again"></td>
+             </tr>
+         </table>
+	</section>
+	
+		<section id="contact" class="section">
+    <h2>Time Management</h2>
+    <p>Be on time, every time: 6 simple tricks
+Know why the clock is your enemy. If you can figure out why you're always late, you can actively work to fix the problem.
+Say no to last-minute requests.
+Bring a book for the wait.
+Write down your routine tasks in real time.
+Stop doing "just one more thing"
+Set an alarm reminder</p>
+
+</section>
+</body>
+</html>
